@@ -10,7 +10,7 @@ legacy_permalink: http://fomori.org/blog/?p=391
 Indexing large tar files for fast access using python
 =====================================================
 
-[![](/assets/2012-05-24-Indexing large tar files for fast access using python/tarindexer-150x150.png "tarindexer")](http://fomori.org/blog/wp-content/uploads/2012/05/tarindexer.png)I recently needed to get some data out of a large tar file, about 5gb in size, that I didn’t want to extract, as it contained many thousands of small files. Unfortunately the tar format was not designed to be indexed, since it was meant for backups on magnetic tapes (*tar* stands for *ta**pe archive*). The gnu [tar](http://www.linuxmanpages.com/man1/tar.1.php) has a command for retrieving single files, but it needs to go through the whole tar each time, which was just too slow.
+[![](/assets/2012-05-24-Indexing_large_tar_files_for_fast_access_using_python/tarindexer-150x150.png "tarindexer")](http://fomori.org/blog/wp-content/uploads/2012/05/tarindexer.png)I recently needed to get some data out of a large tar file, about 5gb in size, that I didn’t want to extract, as it contained many thousands of small files. Unfortunately the tar format was not designed to be indexed, since it was meant for backups on magnetic tapes (*tar* stands for *ta**pe archive*). The gnu [tar](http://www.linuxmanpages.com/man1/tar.1.php) has a command for retrieving single files, but it needs to go through the whole tar each time, which was just too slow.
 
 So I decided to write a little tool, that would index all files inside the archive and write that index to another file. Now I can access each file within the tar in just a second, instead of 15 minutes. Introducing the tarindexer!
 

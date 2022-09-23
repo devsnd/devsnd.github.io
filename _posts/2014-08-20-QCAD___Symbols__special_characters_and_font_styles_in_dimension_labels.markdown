@@ -10,7 +10,7 @@ legacy_permalink: http://fomori.org/blog/?p=1005
 QCAD – Symbols, special characters and font styles in dimension labels
 ======================================================================
 
-[![Cover - QCAD with Alpha and l_ABz dimensions](/assets/2014-08-20-QCAD – Symbols, special characters and font styles in dimension labels/Cover-QCAD-with-Alpha-and-l_ABz-dimensions.png)](/assets/2014-08-20-QCAD – Symbols, special characters and font styles in dimension labels/Cover-QCAD-with-Alpha-and-l_ABz-dimensions.png)
+[![Cover - QCAD with Alpha and l_ABz dimensions](/assets/2014-08-20-QCAD___Symbols__special_characters_and_font_styles_in_dimension_labels/Cover-QCAD-with-Alpha-and-l_ABz-dimensions.png)](/assets/2014-08-20-QCAD___Symbols__special_characters_and_font_styles_in_dimension_labels/Cover-QCAD-with-Alpha-and-l_ABz-dimensions.png)
 
 [QCAD](http://www.qcad.org/en/ "qcad.org") is a great free and open source [CAD](https://en.wikipedia.org/wiki/Computer-aided_design "en.wikipedia.org - Computer-aided_design") software. Although limited to 2D design, it is my favorite tool for drafting, construction and simple sketches. It is [well documented](http://www.qcad.org/en/qcad-documentation "qcad.org/en - qcad-documentation") overall, but one issue I could not find a solution for, was how to label dimensions with symbols, special characters or certain font styles (bold, italic, super-/subscript).
 
@@ -18,7 +18,7 @@ This blog post provides a simple trick to get it done.
 
 If you try to label the dimension of an angle with a symbol (like “α” or “β”) for example, QCAD will only show a question mark (“?”) as a place holder:
 
-[![QCAD with ? dimension](/assets/2014-08-20-QCAD – Symbols, special characters and font styles in dimension labels/QCAD-with-dimension.png)](/assets/2014-08-20-QCAD – Symbols, special characters and font styles in dimension labels/QCAD-with-dimension.png)
+[![QCAD with ? dimension](/assets/2014-08-20-QCAD___Symbols__special_characters_and_font_styles_in_dimension_labels/QCAD-with-dimension.png)](/assets/2014-08-20-QCAD___Symbols__special_characters_and_font_styles_in_dimension_labels/QCAD-with-dimension.png)
 
 To get QCAD to display symbols, special characters or certain font styles (bold, italic, super-/subscript) in dimension labels, the desired label in the label text field must be provided in a certain text format:
 
@@ -34,7 +34,7 @@ For example (α in italic monospace for an angle dimension label):
 \fMonospace|b0|i1|c0|p0;α
 ```
 
-[![QCAD with Alpha dimension](/assets/2014-08-20-QCAD – Symbols, special characters and font styles in dimension labels/QCAD-with-Alpha-dimension.png)](/assets/2014-08-20-QCAD – Symbols, special characters and font styles in dimension labels/QCAD-with-Alpha-dimension.png)
+[![QCAD with Alpha dimension](/assets/2014-08-20-QCAD___Symbols__special_characters_and_font_styles_in_dimension_labels/QCAD-with-Alpha-dimension.png)](/assets/2014-08-20-QCAD___Symbols__special_characters_and_font_styles_in_dimension_labels/QCAD-with-Alpha-dimension.png)
 
 Super- and subscript font styles are also possible by using:
 

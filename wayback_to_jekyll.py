@@ -74,7 +74,7 @@ for file in sorted(os.listdir(basedir)):
 
 	normalized_title = re.sub("\\W", "_", title)
 	filename = f'{date}-{normalized_title}.markdown'
-	post_asset_folder = f'{date}-{title}'
+	post_asset_folder = f'{date}-{normalized_title}'
 	
 	output_path = os.path.join(output_folder, filename)
 	for src_url, src in images:

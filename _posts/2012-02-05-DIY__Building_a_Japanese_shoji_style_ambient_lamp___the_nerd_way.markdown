@@ -10,7 +10,7 @@ legacy_permalink: http://fomori.org/blog/?p=112
 DIY: Building a Japanese shoji-style ambient lamp – the nerd way
 ================================================================
 
-[![](/assets/2012-02-05-DIY: Building a Japanese shoji-style ambient lamp – the nerd way/shoji-style_lamp-cad-250x300.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-cad.png)[![](/assets/2012-02-05-DIY: Building a Japanese shoji-style ambient lamp – the nerd way/shoji-style_lamp-draft-assembly-234x300.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-draft-assembly.png)
+[![](/assets/2012-02-05-DIY__Building_a_Japanese_shoji_style_ambient_lamp___the_nerd_way/shoji-style_lamp-cad-250x300.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-cad.png)[![](/assets/2012-02-05-DIY__Building_a_Japanese_shoji_style_ambient_lamp___the_nerd_way/shoji-style_lamp-draft-assembly-234x300.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-draft-assembly.png)
 
 This is another old project that I made a while ago. I have to admit, the idea itself is stolen from [instructables.com](http://www.instructables.com/id/5-Japanese-lamp-from-recycled-materials/ "instructables.com - Japanese lamp from recycled materials") and you can see that the outcome looks similar at first glance. But I wanted to take a different approach. While I really like the [shoji](http://en.wikipedia.org/wiki/Sh%C5%8Dji "en.wikipedia.org - Shoji")-design, I wanted my lamp to be more solid and long-lasting. Besides, I preferred the size (and ratio) of the [DIN-A4-format](http://en.wikipedia.org/wiki/A4_paper#The_A_series "en.wikipedia.org - A4 paper"), so that I can easily replace the paper without trimming it first, in case it gets damaged or i want to change the color. It has a beautiful ratio (297 / 210 = √2). The length of the sticks within the frame are chosen in a way that the rectangular pattern on the frame also has a ratio of √2.
 
@@ -40,19 +40,19 @@ That is all you need. You can easily build the lamp with the CAD-Drafts provided
 
 First get the CAD-Draft from below. Cut the sticks and drill the holes. Sand the edges and make sure all surfaces are plane. Now glue everything together (using clamps, if you can) according to the CAD-Draft. Making the cage out of these small sticks is the hardest part. Try to work accurate, otherwise you will end up with a deformed construction that will not fit on top of your base anymore.
 
-[![](/assets/2012-02-05-DIY: Building a Japanese shoji-style ambient lamp – the nerd way/shoji-style_lamp-cage-273x300.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-cage.png)[![](/assets/2012-02-05-DIY: Building a Japanese shoji-style ambient lamp – the nerd way/shoji-style_lamp-cage_top-300x278.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-cage_top.png)
+[![](/assets/2012-02-05-DIY__Building_a_Japanese_shoji_style_ambient_lamp___the_nerd_way/shoji-style_lamp-cage-273x300.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-cage.png)[![](/assets/2012-02-05-DIY__Building_a_Japanese_shoji_style_ambient_lamp___the_nerd_way/shoji-style_lamp-cage_top-300x278.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-cage_top.png)
 
 Even if you work very carefully and accurately you will always have tolerances, so you should keep that in mind when you glue the four 10x10x10 cubes onto the upper side of the base. The drawing stats an ideal distance of 10 mm from the edges, but i would add at least 1 mm just to be safe that everything fits together.
 
-[![](/assets/2012-02-05-DIY: Building a Japanese shoji-style ambient lamp – the nerd way/shoji-style_lamp-draft-base-300x278.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-draft-base.png)
+[![](/assets/2012-02-05-DIY__Building_a_Japanese_shoji_style_ambient_lamp___the_nerd_way/shoji-style_lamp-draft-base-300x278.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-draft-base.png)
 
 In the picture below you can see that I used screws instead of wooden cubes for my prototype. Now you can also see what the function of the two small holes is. With the wire going through both holes it creates a lot of friction. That way the fragile contacts at the light bulb socket are protected.
 
-[![](/assets/2012-02-05-DIY: Building a Japanese shoji-style ambient lamp – the nerd way/shoji-style_lamp-base-300x281.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-base.png)
+[![](/assets/2012-02-05-DIY__Building_a_Japanese_shoji_style_ambient_lamp___the_nerd_way/shoji-style_lamp-base-300x281.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-base.png)
 
 Done! Here my result:
 
-[![](/assets/2012-02-05-DIY: Building a Japanese shoji-style ambient lamp – the nerd way/shoji-style_lamp-ambient.png)](/assets/2012-02-05-DIY: Building a Japanese shoji-style ambient lamp – the nerd way/shoji-style_lamp-ambient.png)
+[![](/assets/2012-02-05-DIY__Building_a_Japanese_shoji_style_ambient_lamp___the_nerd_way/shoji-style_lamp-ambient.png)](/assets/2012-02-05-DIY__Building_a_Japanese_shoji_style_ambient_lamp___the_nerd_way/shoji-style_lamp-ambient.png)
 
 **CAD-Drafts:**
 

@@ -10,7 +10,7 @@ legacy_permalink: http://fomori.org/blog/?p=413
 Conway’s Game of Life in 3 Lines of Python
 ==========================================
 
-[![](/assets/2012-07-11-Conway’s Game of Life in 3 Lines of Python/200px-Game_of_life_block_with_border.svg_.png "200px-Game_of_life_block_with_border.svg")](/assets/2012-07-11-Conway’s Game of Life in 3 Lines of Python/200px-Game_of_life_block_with_border.svg_.png)I recently saw a video of an implementation of [Conway’s game of life written in APL](http://www.youtube.com/watch?v=a9xAKttWgP4) which was done in just one line. And because I couldn’t sleep last night, I implemented it in python as short as I possibly could.
+[![](/assets/2012-07-11-Conway_s_Game_of_Life_in_3_Lines_of_Python/200px-Game_of_life_block_with_border.svg_.png "200px-Game_of_life_block_with_border.svg")](/assets/2012-07-11-Conway_s_Game_of_Life_in_3_Lines_of_Python/200px-Game_of_life_block_with_border.svg_.png)I recently saw a video of an implementation of [Conway’s game of life written in APL](http://www.youtube.com/watch?v=a9xAKttWgP4) which was done in just one line. And because I couldn’t sleep last night, I implemented it in python as short as I possibly could.
 
 So here it is:
 

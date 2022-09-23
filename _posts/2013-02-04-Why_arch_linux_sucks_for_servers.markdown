@@ -10,7 +10,7 @@ legacy_permalink: http://fomori.org/blog/?p=468
 Why arch linux sucks for servers
 ================================
 
-[![archlogo](/assets/2013-02-04-Why arch linux sucks for servers/archlogo.png)](http://fomori.org/blog/?attachment_id=472)Yes, you heard correctly. Installing arch linux on a server is the biggest mistake you could make as admin. And I made that mistake.
+[![archlogo](/assets/2013-02-04-Why_arch_linux_sucks_for_servers/archlogo.png)](http://fomori.org/blog/?attachment_id=472)Yes, you heard correctly. Installing arch linux on a server is the biggest mistake you could make as admin. And I made that mistake.
 
 Let me explain: I love arch linux. I love it so much, that I dared to put it onto just about any machine I own. Arch linux is genius, because you get all the latest updates of all the software you use and because you can install software packaged by the community in a split second without worrying about *make install* ruining your system. I’ve been running arch linux on my personal laptop now for some years and I was able to fix whatever problem came across, because I know what’s going on under the hood and because of the great help of the arch linux community.
 

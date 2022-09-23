@@ -34,13 +34,13 @@ This basically calls both programs and prints their output into the compiler pan
 
 This regular expression matches the output of pep8 and pylint. Geany interprets the first group as the name of the source file and the second group as the line number.
 
-[![This is how your configuration should look like](/assets/2013-04-06-PyLint and Pep8 validation in geany/geanypylintpep8.png)](http://fomori.org/blog/?attachment_id=549)This is how your configuration should look like
+[![This is how your configuration should look like](/assets/2013-04-06-PyLint_and_Pep8_validation_in_geany/geanypylintpep8.png)](http://fomori.org/blog/?attachment_id=549)This is how your configuration should look like
 
 To valiate, just press *F9*, since that launches the second build command.
 
 Everything is red now. Great.
 
-[![sourceallred](/assets/2013-04-06-PyLint and Pep8 validation in geany/sourceallred.png)](http://fomori.org/blog/?attachment_id=550)
+[![sourceallred](/assets/2013-04-06-PyLint_and_Pep8_validation_in_geany/sourceallred.png)](http://fomori.org/blog/?attachment_id=550)
 
   
 
