@@ -37,9 +37,8 @@ for file in sorted(os.listdir(basedir)):
 	
 	content = re.findall('<article.+?>(.+?)<\\/article', index_data, re.DOTALL)[0]
 	def repl_func(match):
-		soup = BeautifulSoup(match.groups()[0])
-		# remove line numbering and extract contents
-		print(soup.find_all(''))
+		soup = BeautifulSoup(match.groups()[0], features="lxml")
+		
 		all_crayon_lines = soup.find_all(lambda tag: tag.name == 'div' and 'crayon-line' in tag['class'])
 		lines = [
 			td.get_text()
@@ -74,7 +73,7 @@ for file in sorted(os.listdir(basedir)):
 
 	normalized_title = re.sub("\\W", "_", title)
 	filename = f'{date}-{normalized_title}.markdown'
-	post_asset_folder = f'{date}-{normalized_title}'
+	post_asset_folder = f'images'
 	
 	output_path = os.path.join(output_folder, filename)
 	for src_url, src in images:
@@ -99,6 +98,7 @@ layout: post
 title:  "{title}"
 date:   {datetime}
 categories: {categories}
+author: {author}
 legacy_permalink: {permalink}
 ---
 {content}
