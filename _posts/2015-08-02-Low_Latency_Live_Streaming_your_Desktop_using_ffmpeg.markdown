@@ -8,9 +8,6 @@ legacy_permalink: /?p=1213
 ---
 
 
-Low-Latency Live Streaming your Desktop using ffmpeg
-====================================================
-
 I recently bought myself a projector, which I installed in one corner of the room. Unfortunately I didn’t buy a long enough HDMI cable with it, so I could not connect it to my desktop computer and instead used my loyal ThinkPad T60 for playback. But I also wanted to be able to play some games using the projector, for which my laptop wasn’t beefy enough. So I thought, why not just stream the games from my desktop computer to the laptop?
 
 In this post I will explore how to stream 720p (or any quality for that matter) from one computer to another using ffmpeg and netcat, with a latency below 100ms, which is good enough for many games. **TL;DR; If you don’t care about the technical details, just [jump to the end of the post](/blog/?p=1213#thesolution) to try it out yourself.**

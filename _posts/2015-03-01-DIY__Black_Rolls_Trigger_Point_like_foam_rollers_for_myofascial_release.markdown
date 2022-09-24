@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=1088
 ---
 
 
-DIY: Black Rolls/Trigger Point-like foam rollers for myofascial release
-=======================================================================
-
 [![Black Rolls](/assets/images/Cover-1-Black-Rolls-300x199.png)![Finished DIY version](/assets/images/Cover-2-Finished-DIY-version-300x209.png)](http://fomori.org/blog/wp-content/uploads/2015/03/Cover-1-Black-Rolls.png)
 
 I am a big fan of using foam rollers for [myofascial release](https://en.wikipedia.org/wiki/Myofascial_Release "en.wikipedia.org - myofascial release"), especially after workout.

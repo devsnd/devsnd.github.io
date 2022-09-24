@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=1005
 ---
 
 
-QCAD – Symbols, special characters and font styles in dimension labels
-======================================================================
-
 [![Cover - QCAD with Alpha and l_ABz dimensions](/assets/images/Cover-QCAD-with-Alpha-and-l_ABz-dimensions.png)](/assets/images/Cover-QCAD-with-Alpha-and-l_ABz-dimensions.png)
 
 [QCAD](http://www.qcad.org/en/ "qcad.org") is a great free and open source [CAD](https://en.wikipedia.org/wiki/Computer-aided_design "en.wikipedia.org - Computer-aided_design") software. Although limited to 2D design, it is my favorite tool for drafting, construction and simple sketches. It is [well documented](http://www.qcad.org/en/qcad-documentation "qcad.org/en - qcad-documentation") overall, but one issue I could not find a solution for, was how to label dimensions with symbols, special characters or certain font styles (bold, italic, super-/subscript).

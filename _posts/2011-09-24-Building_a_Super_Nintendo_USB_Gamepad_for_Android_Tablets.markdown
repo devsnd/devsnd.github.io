@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=10
 ---
 
 
-Building a Super Nintendo USB Gamepad for Android Tablets
-=========================================================
-
 [![](/assets/images/android-snes-usb-in-action.jpg)](/assets/images/android-snes-usb-in-action.jpg)I recently build a little USB-SNES-Gamepad for my Android Tablet, because I didn’t like using the on screen controls of the emulators. It just wasn’t fun playing the games of my childhood without the original controller in my hands. Luckily my Tablet has a standard USB port with host capability and supports thumbdrives, keyboards and mice out-of-the-box. So I figuered I could easily put the controllerboard of a usb keyboard inside the spare original SNES gamepad i had liying around.
 
 So I grabbed a cheap usb keyboard at a fleamarket for 3€ or something and tore it apart.[![](/assets/images/snes-usb_android-7.jpg)](/assets/images/snes-usb_android-7.jpg) Inside a normal keyboard these days is little more than the usb controller board and two matrices made of plastic. So I first I had to find out how those matrices actually worked to make them fulfill my purpose and was happy to find an [incredibly good website about everything there is to know about keyboard matrices](http://www.dribin.org/dave/keyboard/one_html/ "Keyboard Matrix Help").

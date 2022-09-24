@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=1079
 ---
 
 
-Samsung Galaxy S3 repair – Glass screen/digitizer replacement and why it is not recommended
-===========================================================================================
-
 [![Glass screen replaced](/assets/images/Cover-Glass-screen-replaced-300x208.png)](http://fomori.org/blog/wp-content/uploads/2015/03/Cover-Glass-screen-replaced.png)A friend asked me to repair her friends [Samsung Galaxy S3](https://en.wikipedia.org/wiki/Samsung_Galaxy_S_III "en.wikipedia.org - Samsung Galaxy S III") mobile phone, that had a broken glass screen/digitizer, so I had a closer look at it. The process of replacing the glass screen/digitizer on a Samsung Galaxy S3 is straight forward and not many tools are needed. However, what you really need is patience… a lot of it.
 
 This post shows how it is done and why I still would not recommend it anyway.

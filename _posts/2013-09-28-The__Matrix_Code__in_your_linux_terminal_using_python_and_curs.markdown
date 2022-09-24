@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=648
 ---
 
 
-The “Matrix Code” in your linux terminal using python and curses
-================================================================
-
 Everybody knows the code on the screens in the movie *the matrix*. You can see it for example when the character “cypher” talks to “neo” somewhen in the night, and the green letters fall down on those second-hand dell screens behind them. Funky. I want that too.
 
 [![cypher_neo_code](/assets/images/cypher_neo_code-300x168.png)](http://fomori.org/blog/?attachment_id=649)

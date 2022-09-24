@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=548
 ---
 
 
-PyLint and Pep8 validation in geany
-===================================
-
 If you’re into python, but don’t know about [PEP8](http://www.python.org/dev/peps/pep-0008/) or [PyLint](http://www.pylint.org/), you should find out right now. And because pep8 and pylint are great, but it’s hard to force yourself to use them all the time, lets integrate them into [geany](http://www.geany.org), a fast and lightweight IDE.
 
 First download the packages containing pylint and pep8. For arch linux, they’re called *pep8-python3* and *pylint* respectively. The names may differ for other distributions.

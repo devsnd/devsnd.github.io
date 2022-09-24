@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=1096
 ---
 
 
-Homeserver Upgrade: Odroid XU3-Lite Setup on a SD-Card
-======================================================
-
 I recently bought a new home server, the [Odroid XU3-Lite](http://www.hardkernel.com/main/products/prdt_info.php?g_code=G141351880955) to replace my poor man’s home server I called [the thin-server](http://fomori.org/blog/?p=37), to run [CherryMusic](http://fomori.org/cherrymusic) and the like.
 
 [![20150116_120429_small](/assets/images/20150116_120429_small.jpg)](/assets/images/20150116_120429_small.jpg)

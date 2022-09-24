@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=451
 ---
 
 
-Raspberry Pi Case DIY
-=====================
-
 [![](/assets/images/rpicase_cover-cad-150x150.png "rpicase_cover-cad")](http://fomori.org/blog/wp-content/uploads/2012/09/rpicase_cover-cad.png)[![](/assets/images/rpicase_cover-draft-150x150.png "rpicase_cover-draft")](http://fomori.org/blog/wp-content/uploads/2012/09/rpicase_cover-draft.png)[![](/assets/images/rpicase_cover-real-150x150.png "rpicase_cover-real")](http://fomori.org/blog/wp-content/uploads/2012/09/rpicase_cover-real.png)
 
 I finally got myself a [Raspberry Pi](http://www.raspberrypi.org/ "raspberrypi.org") and it obviously needs a case. (By the way, it runs the [ARM version](http://archlinuxarm.org/ "archlinuxarm.org") of [Arch Linux](https://www.archlinux.org/ "archlinux.org"), naturally.) Of course I wanted to build one myself, rather than buying one of those boring cases that almost cost more than the device itself. I already had a vague idea about the concept but nothing solid yet. The concept had to be simple (but solid), because besides a [Dremel](https://en.wikipedia.org/wiki/Dremel "en.wikipedia.org - Dremel") and an electric drill I only had standard tools at hand. (You do not even need a Dremel if you have a small saw instead.)

@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=687
 ---
 
 
-How to install and configure CherryMusic on a Debian Wheezy (headless) server
-=============================================================================
-
 [![cherry_music_web_notext](/assets/images/cherry_music_web_notext.png "CherryMusic logo")](http://fomori.org/cherrymusic)[![plus](/assets/images/plus.png "Hey, I am the mathematical operator for addition!")](https://en.wikipedia.org/wiki/%2B)[![openlogo](/assets/images/openlogo.png "Debian openlogo")](http://www.debian.org)
 
 This guide explains how to correctly — and more importantly cleanly — install [CherryMusic](http://fomori.org/cherrymusic) on a [(headless) server](https://en.wikipedia.org/wiki/Headless_system) running [Debian Wheezy](http://www.debian.org) — without polluting the operating system in any way. For [Arch Linux](https://www.archlinux.org) or a more generic installation see the [CherryMusic Arch Linux wiki page](https://wiki.archlinux.org/index.php/CherryMusic) and [CherryMusic’s own wiki on GitHub](https://github.com/devsnd/cherrymusic/wiki/Setup-guide).

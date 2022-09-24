@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=37
 ---
 
 
-Cheap Home Server: Introducing the Thin-Server
-==============================================
-
 [![](/assets/images/630px_thinserver_teaser.jpg "630px_thinserver_teaser")](/assets/images/630px_thinserver_teaser.jpg)
 
 A little while ago I finally made the decision that I would like to have a server at home and I was at first fascinated by the [SheevaPlug](http://de.wikipedia.org/wiki/SheevaPlug "SheevaPlug wikipedia"), but many people complained that the [powersupply of it would die](http://chemicaloliver.net/electronics/sheevaplug-why-globalscale-suck/) [within weeks](http://www.newit.co.uk/forum/index.php?topic=353.0), so I needed an alternative but I still didn’t want to use a regular computer because of several disadvantages;

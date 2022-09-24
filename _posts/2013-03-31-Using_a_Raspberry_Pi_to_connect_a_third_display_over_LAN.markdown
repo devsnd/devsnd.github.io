@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=530
 ---
 
 
-Using a Raspberry Pi to connect a third display over LAN
-========================================================
-
 I’ve received my rPi a while ago, but never wound up doing much with it. Recently I have received another screen which is a little older, but still features a DVI input. Since developers can’t have enough screen space and my laptop has only one VGA output, I decided to use the raspberry pi as my ethernet-to-DVI adapter.
 
 [![IMG_20130331_200140](/assets/images/IMG_20130331_200140.jpg)](http://fomori.org/blog/?attachment_id=538)

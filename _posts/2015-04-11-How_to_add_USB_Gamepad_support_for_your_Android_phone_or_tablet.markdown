@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=1178
 ---
 
 
-How to add USB Gamepad support for your Android phone or tablet
-===============================================================
-
 IMG_20150411_201153
 ===================
 

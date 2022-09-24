@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=892
 ---
 
 
-UEFI, GNU/Linux and HP notebooks – problems and how to get it working
-=====================================================================
-
 There is a lot of confusion and wrong information in the internet about the [Unified Extensible Firmware Interface (UEFI)](https://en.wikipedia.org/wiki/Uefi "en.wikipedia.org - UEFI") and how to set it up correctly – especially under GNU/Linux. What makes things worse and also confused me a lot is that all vendors tend to implement this “standard” differently. So although UEFI is defined as a new industry standard replacing the [BIOS](https://en.wikipedia.org/wiki/BIOS "en.wikipedia.org - BIOS"), it can hardly be called “standard” at this time. Yet another problem of understanding UEFI is, that people seem to mix up words that have a special meaning.
 
 My old notebook still uses the old BIOS-MBR setup, not capable of any UEFI fancy-ness. But it is dying, so I recently bought a new one. It is an “HP EliteBook 840 G1″. I used that opportunity to familiarize myself with UEFI and GNU/Linux.

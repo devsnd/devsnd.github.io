@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=970
 ---
 
 
-Maxima (software) and gnuplot – plot functions using lines with symbols on it (workaround)
-==========================================================================================
-
 [![maxima-title-workaround](/assets/images/maxima-title-workaround.png)](/assets/images/maxima-title-workaround.png)
 
 I am recently working on some scientific papers for which I have to visualize a lot of mathematical functions. In a good scientific paper the graphs (and visualizations in general) should be colorless and utilize dotted/dashed lines or lines with symbols on it instead of colors. This has several advantages: A colorless plot is more neutral to the reader, he/she does not get distracted by the different colors. A reader may also have a (subliminal) preference in color, so he/she pays more attention to e.g. the red curve than the yellow one, that is hardly readable on the white background anyway. This also helps to distinguish functions, if they are plotted in one diagram and printed in gray scale mode or read by color blind people. Also, if two identical functions are plotted in one diagram, using just colors will probably only show one of the functions and hide the other.

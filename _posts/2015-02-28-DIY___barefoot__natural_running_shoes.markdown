@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=1056
 ---
 
 
-DIY: “barefoot”/natural running shoes
-=====================================
-
 [![Finished sole](/assets/images/Cover-Finished-sole-300x242.png)](http://fomori.org/blog/wp-content/uploads/2015/02/Cover-Finished-sole.png)
 
 At the end of last year I went to a sports and health fair, where I wanted to have a closer look at the available natural running shoes, especially the ones from [Vibram (FiveFingers)](http://vibram.com/fivefingers "Vibram.com - FiveFingers") and [Leguano](http://www.leguano.eu/ "leguano.eu"). Both type of shoes were comfortable and seemed to be of good quality. However, with an above the 70 EUR price range, they are quite expensive for a shoe that aims to be like no shoe at all. In fact, they are more like a pair of high quality socks with a special thin rubber layer glued to the sole (whereas the Vibram FiveFingers also seem to have some supportive structure integrated, which is kind of a contradiction to the barefoot philosophy). Making a custom fitted version should not be that hard, so I decided to make my own.

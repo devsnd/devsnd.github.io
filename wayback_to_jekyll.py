@@ -35,7 +35,7 @@ for file in sorted(os.listdir(basedir)):
 
 	title = unescape(re.findall('<title>([^<]+)</title>', index_data)[0][:-len('| fomori blog')]).strip()
 	
-	content = re.findall('<article.+?>(.+?)<\\/article', index_data, re.DOTALL)[0]
+	content = re.findall('<article.+?>.+?</header>(.+?)<\\/article', index_data, re.DOTALL)[0]
 	def repl_func(match):
 		soup = BeautifulSoup(match.groups()[0], features="lxml")
 		

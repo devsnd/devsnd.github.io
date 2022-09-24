@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=1209
 ---
 
 
-Fixing Full-HD VGA support for the Epson EH-TW5200 Projector
-============================================================
-
 If you happen to own an Epson EH-TW5200 projector, you might have experienced problems setting Full-HD (1920×1080) resolution using a VGA connection under linux. When I set the resolution to Full-HD, the whole screen would stay completely black. This is just a quick fix for the other 4 people that might have this problem.
 
 ```

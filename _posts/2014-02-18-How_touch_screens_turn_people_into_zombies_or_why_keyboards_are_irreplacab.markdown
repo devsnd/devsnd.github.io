@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=506
 ---
 
 
-How touch screens turn people into zombies or why keyboards are irreplacable
-============================================================================
-
 [![internetzombies](/assets/images/internetzombies-300x173.png)](http://fomori.org/blog/?attachment_id=816)[zombie hand by kayanbn](http://www.officialpsds.com/Zombie-Hand-2-PSD91804.html)  
 [CC Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/)
 

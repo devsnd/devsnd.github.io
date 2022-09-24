@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=293
 ---
 
 
-Disable private data sync of Google apps (e.g. calendar and contacts) in Android
-================================================================================
-
 This post describes a dirty (but effective) workaround to individually disable data synchronization of the installed Google apps, while keeping others (e.g. Android Market) intact.
 
 First of all, this only works on “[rooted](http://en.wikipedia.org/wiki/Rooting_%28Android_OS%29 "en.wikipedia.org - Rooting (Android OS)")” devices and you need to have the [ADB](http://developer.android.com/sdk/installing.html "developer.android.com - Installing the SDK") installed on your computer. If you have not rooted your device yet, I can only recommend doing so, even if you do not plan to apply any of the solutions described in this post. Not having root access on your own GNU/Linux system is stupid and frustrating. You paid for it, you should have full control over it!

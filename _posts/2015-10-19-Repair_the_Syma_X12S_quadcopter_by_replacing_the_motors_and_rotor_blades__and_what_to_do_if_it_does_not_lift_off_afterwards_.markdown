@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=1237
 ---
 
 
-Repair the Syma X12S quadcopter by replacing the motors and rotor blades (and what to do if it does not lift off afterwards)
-============================================================================================================================
-
 [![Syma X12S quadcopter with new motors](/assets/images/Cover-300x213.png)](http://fomori.org/blog/wp-content/uploads/2015/10/Cover.png)My friend owns a Syma X12S [quadcopter](https://en.wikipedia.org/wiki/Quadcopter "en.wikipedia.org - quadcopter") that was cheaply imported from China. It really is an amazing piece of hardware and the perfect entertainment when you spend an evening with friends. Piloting this miniature aircraft is quite easy – it only takes a few flying sessions until you acquired enough skills to handle it. However, I still managed to crash the quadcopter in a way that damaged two of its four motors. The beauty of this toy is its modular design: Even though it is a cheap product, most of the parts are [LRU](https://en.wikipedia.org/wiki/Line-replaceable_unit "en.wikipedia.org - Line-replaceable unit")s, so you can simply order a replacement for the defect part and replace it yourself.  
 
 This short post shows how to replace the motors of a Syma X12S quadcopter and highlights some difficulties to look out for.

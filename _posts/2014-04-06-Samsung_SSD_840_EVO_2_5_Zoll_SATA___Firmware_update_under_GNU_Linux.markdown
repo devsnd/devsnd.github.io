@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=933
 ---
 
 
-Samsung SSD 840 EVO 2.5 Zoll SATA – Firmware update under GNU/Linux
-===================================================================
-
 I recently bought a Samsung SSD to replace my HDD in my [Arch Linux](https://www.archlinux.org/ "archlinux.org") notebook. It is a “Samsung SSD 840 EVO 2.5 Zoll SATA”. One of the first things I do when I get new hardware is to make sure the latest firmware is installed. Mine did not have the latest firmware update and – as it was to expect – Samsung SSD firmware updates under GNU/Linux are not (officially) supported. Samsung ships only Microsoft Windows software, called “Magician”, which can directly update the firmware or create a [live USB-Stick](https://en.wikipedia.org/wiki/Live_USB "wikipedia.org - Live USB") to do the update. Additionally, they provide *.iso image files (one for Microsoft Windows systems and one for Apple computer, respectively) to update the firmware from a [live CD](https://en.wikipedia.org/wiki/Live_CD "wikipedia.org - Live CD"). The *.iso image file intended for Microsoft Windows would also work under GNU/Linux, only that my notebook does not have a CD Drive anymore. Obvioulsy, the only option left was to create my own live USB-Stick under GNU/Linux – without using Microsoft Windows and that crappy Samsung “Magician” software. A simple “dd” comand to “burn” the *.iso file on an USB-Stick did not do the trick, as the [Isolinux](https://en.wikipedia.org/wiki/SYSLINUX "wikipedia.org - Syslinux") version Samsung uses is over 10 years (!) old.
 
 This article shows how to update the firmware of a “Samsung SSD 840 EVO 2.5 Zoll SATA” under GNU/Linux using a bootable live USB-Stick.

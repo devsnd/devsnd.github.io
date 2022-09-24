@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=486
 ---
 
 
-3to2 by hand – back porting python 3 to python 2
-================================================
-
 As mentioned in an earlier post, I’m currently writing a [music streaming server](http://fomori.org/cherrymusic "CherryMusic – A Music Streaming server for your browser") in python. As I wanted to go with the newest thing available, I wrote it in python 3. Unfortunately the application server we rely on, [cherrypy](http://cherrypy.org), is only packaged for python 2 in most distributions! Even worse, even if the packages were installed for python 3, it would not run, since I relied on python 3.3 features.
 
 Since this keeps my program from being used in the world, I decided to backport it to python 2. For me it was very important, that the code would not get any uglier by doing so, so I started writing a replacement module.

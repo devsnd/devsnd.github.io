@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=308
 ---
 
 
-Poor man’s DynDNS – A PHP solution
-==================================
-
 I’m running a [Thin-Client as a home server](http://fomori.org/blog/blog/2011/09/29/cheap-home-server-introducing-the-thin-server/ "Cheap Home Server: Introducing the Thin-Server") and sometimes I need access to some files at home. Since those no-ip services didn’t prove that reliable in the past, I decided to implement a DynDNS substitute in PHP.
 
 The concept is quite simple: Let the little server at home call a PHP script somewhere on a “big” Server that has a static IP. The big server then writes the IP to a file, so it can be read from anywhere. There are two scripts that have to reside on the big server: an *index.php*, which reads and echoes the IP, that was recorded, and another script in a *.htaccess* protected folder, which is able to write the IP of the home server to a file.

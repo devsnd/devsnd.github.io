@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=112
 ---
 
 
-DIY: Building a Japanese shoji-style ambient lamp – the nerd way
-================================================================
-
 [![](/assets/images/shoji-style_lamp-cad-250x300.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-cad.png)[![](/assets/images/shoji-style_lamp-draft-assembly-234x300.png)](http://fomori.org/blog/wp-content/uploads/2012/02/shoji-style_lamp-draft-assembly.png)
 
 This is another old project that I made a while ago. I have to admit, the idea itself is stolen from [instructables.com](http://www.instructables.com/id/5-Japanese-lamp-from-recycled-materials/ "instructables.com - Japanese lamp from recycled materials") and you can see that the outcome looks similar at first glance. But I wanted to take a different approach. While I really like the [shoji](http://en.wikipedia.org/wiki/Sh%C5%8Dji "en.wikipedia.org - Shoji")-design, I wanted my lamp to be more solid and long-lasting. Besides, I preferred the size (and ratio) of the [DIN-A4-format](http://en.wikipedia.org/wiki/A4_paper#The_A_series "en.wikipedia.org - A4 paper"), so that I can easily replace the paper without trimming it first, in case it gets damaged or i want to change the color. It has a beautiful ratio (297 / 210 = √2). The length of the sticks within the frame are chosen in a way that the rectangular pattern on the frame also has a ratio of √2.

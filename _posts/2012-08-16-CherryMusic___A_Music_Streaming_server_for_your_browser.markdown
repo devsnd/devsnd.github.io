@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=431
 ---
 
 
-CherryMusic – A Music Streaming server for your browser
-=======================================================
-
 **This post is quite old. CherryMusic has improved a lot since then. For the latest version and information on CherryMusic, please visit [http://fomori.org/cherrymusic](http://fomori.org/cherrymusic "http://fomori.org/cherrymusic")**
 
 ---

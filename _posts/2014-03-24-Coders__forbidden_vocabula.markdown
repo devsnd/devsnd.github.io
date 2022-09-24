@@ -8,9 +8,6 @@ legacy_permalink: http://fomori.org/blog/?p=846
 ---
 
 
-Coders’ forbidden vocabulary
-============================
-
 I often have to read a lot of code from other people that is not exactly well written or easily understandable. I am working on several different projects; some open-source for fun & giggles and some closed-source for money & fame. I just noticed that the biggest problem in understanding other peoples code is not about things you could easily measure, like code quality in the sense of code formatting standards or the language that it is written in. Naming of constants and variables make all the difference for understanding the code others have written.
 
 [![forbiddenvocabulary](/assets/images/forbiddenvocabulary.png)](http://fomori.org/blog/?attachment_id=873)I realized, that there are some words which should just be forbidden to use on their own. They are too broad or just don’t add any valuable information. I am also very sorry that these following examples contain PHP code, but this is where examples for doing things wrong are easily found. Most of the example code listings are not good practice in other senses as well, but that’s not what this post is about; It’s about the kind of readability which applies to all programming languages.
