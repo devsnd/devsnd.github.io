@@ -3,6 +3,7 @@ layout: post
 title:  "Homeserver Upgrade: Odroid XU3-Lite Setup on a SD-Card"
 date:   2015-04-24 16:32:22 +0000
 categories: ['Hardware', 'Linux', 'Server']
+author: devsnd
 legacy_permalink: http://fomori.org/blog/?p=1096
 ---
 
@@ -12,7 +13,7 @@ Homeserver Upgrade: Odroid XU3-Lite Setup on a SD-Card
 
 I recently bought a new home server, the [Odroid XU3-Lite](http://www.hardkernel.com/main/products/prdt_info.php?g_code=G141351880955) to replace my poor man’s home server I called [the thin-server](http://fomori.org/blog/?p=37), to run [CherryMusic](http://fomori.org/cherrymusic) and the like.
 
-[![20150116_120429_small](/assets/2015-04-24-Homeserver_Upgrade__Odroid_XU3_Lite_Setup_on_a_SD_Card/20150116_120429_small.jpg)](/assets/2015-04-24-Homeserver_Upgrade__Odroid_XU3_Lite_Setup_on_a_SD_Card/20150116_120429_small.jpg)
+[![20150116_120429_small](/assets/images/20150116_120429_small.jpg)](/assets/images/20150116_120429_small.jpg)
 
 That little ARM machine is a beast in the size of a cigarette pack, featuring a total of eight CPU cores, an ethernet port and most importantly an USB 3.0 port to connect an external hard drive. It also comes with a plastic case, with a small fan inside and a PSU that is strong enough to power external hard drives connected to the USB ports. I ordered the smaller “Lite” version, which has a slightly lower CPU clock rate, but costs a lot less than its bigger brother.
 
@@ -52,7 +53,7 @@ Depending on your SD-Card this process may take some minutes and dd will not giv
 
 Before you can actually boot from the microSD card, make sure the correct boot mode is set. The ODROID XU3-Lite can either boot from a microSD card or from a eMMC module. There is a tiny switch on the board, to set the the boot mode as explained in the [ODROID wiki](http://odroid.com/dokuwiki/doku.php?id=en:xu3_bootmode_configuration), which I found a bit confusing to be honest. Set the switch as shown in the picture below.
 
-[![Diagram1](/assets/2015-04-24-Homeserver_Upgrade__Odroid_XU3_Lite_Setup_on_a_SD_Card/Diagram1.jpeg)](/assets/2015-04-24-Homeserver_Upgrade__Odroid_XU3_Lite_Setup_on_a_SD_Card/Diagram1.jpeg)
+[![Diagram1](/assets/images/Diagram1.jpeg)](/assets/images/Diagram1.jpeg)
 
 Now you can insert the microSD card and plug it is and it should boot up in about 20 seconds, and automatically connect to your network using DHCP.
 

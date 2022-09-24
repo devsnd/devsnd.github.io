@@ -3,6 +3,7 @@ layout: post
 title:  "3to2 by hand – back porting python 3 to python 2"
 date:   2013-02-21 11:03:03 +0000
 categories: ['Programming', 'Python']
+author: devsnd
 legacy_permalink: http://fomori.org/blog/?p=486
 ---
 

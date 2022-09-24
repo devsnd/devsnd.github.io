@@ -3,6 +3,7 @@ layout: post
 title:  "Samsung SSD 840 EVO 2.5 Zoll SATA – Firmware update under GNU/Linux"
 date:   2014-04-06 13:28:07 +0000
 categories: ['Hack', 'Hardware', 'Linux', 'Mod', 'Software']
+author: 6arms1leg
 legacy_permalink: http://fomori.org/blog/?p=933
 ---
 

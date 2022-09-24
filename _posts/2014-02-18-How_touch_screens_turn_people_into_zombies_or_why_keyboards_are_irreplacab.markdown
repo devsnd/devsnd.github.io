@@ -3,6 +3,7 @@ layout: post
 title:  "How touch screens turn people into zombies or why keyboards are irreplacab"
 date:   2014-02-18 17:57:29 +0000
 categories: ['Useless']
+author: devsnd
 legacy_permalink: http://fomori.org/blog/?p=506
 ---
 
@@ -10,7 +11,7 @@ legacy_permalink: http://fomori.org/blog/?p=506
 How touch screens turn people into zombies or why keyboards are irreplacable
 ============================================================================
 
-[![internetzombies](/assets/2014-02-18-How_touch_screens_turn_people_into_zombies_or_why_keyboards_are_irreplacab/internetzombies-300x173.png)](http://fomori.org/blog/?attachment_id=816)[zombie hand by kayanbn](http://www.officialpsds.com/Zombie-Hand-2-PSD91804.html)  
+[![internetzombies](/assets/images/internetzombies-300x173.png)](http://fomori.org/blog/?attachment_id=816)[zombie hand by kayanbn](http://www.officialpsds.com/Zombie-Hand-2-PSD91804.html)  
 [CC Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/)
 
 I just wanted to finish a draft blog post using my tablet, since after all, it’s a full blown computer. It has more than enough horsepower to run virtually any writing application. But right after I began to type in letter by letter, I realized that touch screens make you lazy. So lazy, that the blog post would have become much shorter than I wanted it to be. Additionally it would have included strange auto-completion artifacts and misplaced punctuation not resembling my usual writing style. Let’s explore the brave new world of touch screen computing, why touch screens suck and how they make us to internet zombies.
@@ -48,7 +49,7 @@ Epilogue
 
 Half of this post was written using the ZTE Starnaute, maybe the worst mobile on earth; Well, at least it was designed for people with two thumbs.
 
-[![starnaute](/assets/2014-02-18-How_touch_screens_turn_people_into_zombies_or_why_keyboards_are_irreplacab/starnaute-300x230.png)](http://fomori.org/blog/?attachment_id=813)After a few weeks, I could type without watching.
+[![starnaute](/assets/images/starnaute-300x230.png)](http://fomori.org/blog/?attachment_id=813)After a few weeks, I could type without watching.
 
   
 

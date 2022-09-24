@@ -3,6 +3,7 @@ layout: post
 title:  "Poor man’s DynDNS – A PHP solution"
 date:   2011-12-14 03:51:46 +0000
 categories: ['Hack', 'Linux', 'PHP', 'Programming']
+author: devsnd
 legacy_permalink: http://fomori.org/blog/?p=308
 ---
 

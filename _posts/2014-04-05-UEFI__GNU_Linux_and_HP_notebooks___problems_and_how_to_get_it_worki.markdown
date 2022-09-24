@@ -3,6 +3,7 @@ layout: post
 title:  "UEFI, GNU/Linux and HP notebooks – problems and how to get it worki"
 date:   2014-04-05 15:10:51 +0000
 categories: ['Arch Linux', 'Hack', 'Hardware', 'Linux', 'Mod']
+author: 6arms1leg
 legacy_permalink: http://fomori.org/blog/?p=892
 ---
 

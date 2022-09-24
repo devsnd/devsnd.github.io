@@ -3,6 +3,7 @@ layout: post
 title:  "Disable private data sync of Google apps (e.g. calendar and contacts) in Android"
 date:   2012-02-12 14:28:00 +0000
 categories: ['Android', 'Hack', 'Linux', 'Mod']
+author: 6arms1leg
 legacy_permalink: http://fomori.org/blog/?p=293
 ---
 

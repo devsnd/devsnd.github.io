@@ -3,6 +3,7 @@ layout: post
 title:  "How to add USB Gamepad support for your Android phone or tablet"
 date:   2015-04-11 19:41:59 +0000
 categories: ['Android', 'Hack', 'Hardware']
+author: devsnd
 legacy_permalink: http://fomori.org/blog/?p=1178
 ---
 
@@ -79,7 +80,7 @@ Event: time 1428772902.120190, -------------- EV_SYN ------------
 
 Write down the keycode for that button, in the case above thats 288 for the A-Button, so we can later put it inside the android configuration. For me the following configuration came out. I wrote down all the Buttons that are mapped to something in android.
 
-[![Diagram1](/assets/2015-04-11-How_to_add_USB_Gamepad_support_for_your_Android_phone_or_tablet/Diagram1.png)](/assets/2015-04-11-How_to_add_USB_Gamepad_support_for_your_Android_phone_or_tablet/Diagram1.png)
+[![Diagram1](/assets/images/Diagram1.png)](/assets/images/Diagram1.png)
 
 Also wiggle the analog sticks first horizontally then vertically to find out the axis of each stick. In my case those where axis 0/1 for X/Y left and 2/5 for X/Y right. Using the documentation from the android website and by looking at the other keylayout files on my tablet, I created a configuration file like this:
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Fixing Full-HD VGA support for the Epson EH-TW5200 Projector"
 date:   2015-07-28 22:05:36 +0000
 categories: ['Hardware', 'Linux']
+author: devsnd
 legacy_permalink: http://fomori.org/blog/?p=1209
 ---
 

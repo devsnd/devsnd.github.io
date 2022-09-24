@@ -3,6 +3,7 @@ layout: post
 title:  "Building a simple goban (Go board) DIY"
 date:   2013-05-23 21:32:49 +0000
 categories: ['Handycrafts']
+author: 6arms1leg
 legacy_permalink: http://fomori.org/blog/?p=480
 ---
 
@@ -10,7 +11,7 @@ legacy_permalink: http://fomori.org/blog/?p=480
 Building a simple goban (Go board) DIY
 ======================================
 
-[![goban_asm-w](/assets/2013-05-23-Building_a_simple_goban__Go_board__DIY/goban_asm-w-300x162.png "goban_asm-w")](http://fomori.org/blog/wp-content/uploads/2013/05/goban_asm-w.png)[![goban_asm-draft](/assets/2013-05-23-Building_a_simple_goban__Go_board__DIY/goban_asm-draft-300x178.png "goban_asm-draft")](http://fomori.org/blog/wp-content/uploads/2013/05/goban_asm-draft.png)[![goban-finished1](/assets/2013-05-23-Building_a_simple_goban__Go_board__DIY/goban-finished1-300x215.jpg "goban-finished1")](http://fomori.org/blog/wp-content/uploads/2013/05/goban-finished1.jpg)
+[![goban_asm-w](/assets/images/goban_asm-w-300x162.png "goban_asm-w")](http://fomori.org/blog/wp-content/uploads/2013/05/goban_asm-w.png)[![goban_asm-draft](/assets/images/goban_asm-draft-300x178.png "goban_asm-draft")](http://fomori.org/blog/wp-content/uploads/2013/05/goban_asm-draft.png)[![goban-finished1](/assets/images/goban-finished1-300x215.jpg "goban-finished1")](http://fomori.org/blog/wp-content/uploads/2013/05/goban-finished1.jpg)
 
 I am a big fan of the old Japanese board game Go. Some time ago I wanted to get my own Go game, consisting of a Go board ([goban](https://en.wikipedia.org/wiki/Go_equipment#Board "en.wikipedia.org - goban")) and black and white stones. Unfortunately, I found out that wooden Go boards are quite expensive, by far exceeding the price range I was willing to pay. Actually, gobans are quite a simple piece of equipment. It is nothing more than a (wooden) board with a grid of 19 x 19 lines on it, why should I pay over 100 euro for it? So I decided to build my own and just buy the stones, which are cheap to come by.
 
@@ -26,7 +27,7 @@ The Japanese goban is not exactly a square, but has a distinct length-to-width r
 
 **Building the goban**
 
-[![goban_asm-explosion-w](/assets/2013-05-23-Building_a_simple_goban__Go_board__DIY/goban_asm-explosion-w-300x208.png "goban_asm-explosion-w")](http://fomori.org/blog/wp-content/uploads/2013/05/goban_asm-explosion-w.png)
+[![goban_asm-explosion-w](/assets/images/goban_asm-explosion-w-300x208.png "goban_asm-explosion-w")](http://fomori.org/blog/wp-content/uploads/2013/05/goban_asm-explosion-w.png)
 
 My goban consists of three wooden plates to form an empty cavity in the middle section (see picture above or the CAD drafts at the end of this article). That way it creates a beautiful sound when a stone is placed on the board.
 
@@ -42,13 +43,13 @@ Once you cut the boards, glue them together. Carefully remove all leftovers from
 
 Now draw the 19 x 19 lines grid on the board using a pencil first. The outer frame of the grid is 454,5 mm x 424,2 mm (I used 455 mm x 424 mm for simplicity). Make sure that it is centered and that the orientation matches the one of your wooden board (the lengths and widths are not that much different and can easily be confused). Now divide the length and width of the grid by 18, which should give you approximately a 25 mm and 24 mm line spacing. You should also mark the typical 9 intersections of the goban (see the pictures of the finished goban) with small dots or squares. When you are satisfied with the result, use a permanent marker to draw the lines.
 
-[![goban-middle_section](/assets/2013-05-23-Building_a_simple_goban__Go_board__DIY/goban-middle_section-300x275.jpg "goban-middle_section")](http://fomori.org/blog/wp-content/uploads/2013/05/goban-middle_section.jpg)
+[![goban-middle_section](/assets/images/goban-middle_section-300x275.jpg "goban-middle_section")](http://fomori.org/blog/wp-content/uploads/2013/05/goban-middle_section.jpg)
 
 I did not like the tone of the wood I used, so I stained it in a slightly darker tone after I drew the grid.
 
 The final step is to varnish the goban. Choose something that is highly resistant, so that the baord will last a long time. Also, consider varnishing the board several times with small layers, slightly whetting it before each paint. This will make the surface much smoother.
 
-[![goban-finished2](/assets/2013-05-23-Building_a_simple_goban__Go_board__DIY/goban-finished2-300x225.jpg "goban-finished2")](http://fomori.org/blog/wp-content/uploads/2013/05/goban-finished2.jpg)
+[![goban-finished2](/assets/images/goban-finished2-300x225.jpg "goban-finished2")](http://fomori.org/blog/wp-content/uploads/2013/05/goban-finished2.jpg)
 
 Newly, I put a (plexy)glass plate (exact size depends on the chamfer you used) on top of the goban to protect it when I am not playing. This is only useful when you – like me – also use the goban as a cocktail table when you are not playing. It is not necessary to attach the glass plate to the board in any way, the friction alone is enough to prevent the glass plate from moving.
 

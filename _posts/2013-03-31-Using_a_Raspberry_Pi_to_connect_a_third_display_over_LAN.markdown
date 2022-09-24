@@ -3,6 +3,7 @@ layout: post
 title:  "Using a Raspberry Pi to connect a third display over LAN"
 date:   2013-03-31 18:29:24 +0000
 categories: ['Raspberry Pi']
+author: devsnd
 legacy_permalink: http://fomori.org/blog/?p=530
 ---
 
@@ -12,7 +13,7 @@ Using a Raspberry Pi to connect a third display over LAN
 
 I’ve received my rPi a while ago, but never wound up doing much with it. Recently I have received another screen which is a little older, but still features a DVI input. Since developers can’t have enough screen space and my laptop has only one VGA output, I decided to use the raspberry pi as my ethernet-to-DVI adapter.
 
-[![IMG_20130331_200140](/assets/2013-03-31-Using_a_Raspberry_Pi_to_connect_a_third_display_over_LAN/IMG_20130331_200140.jpg)](http://fomori.org/blog/?attachment_id=538)
+[![IMG_20130331_200140](/assets/images/IMG_20130331_200140.jpg)](http://fomori.org/blog/?attachment_id=538)
 
 This how-to is composed of two parts, first I explain how to get *synergy* up and running, and then how to set up your *VNC* to help the illusion that everything is happening on the same computer.
 

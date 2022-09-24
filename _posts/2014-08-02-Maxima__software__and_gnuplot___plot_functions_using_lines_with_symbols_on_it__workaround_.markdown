@@ -3,6 +3,7 @@ layout: post
 title:  "Maxima (software) and gnuplot – plot functions using lines with symbols on it (workaround)"
 date:   2014-08-02 09:24:54 +0000
 categories: ['Hack', 'Linux', 'Programming', 'Software']
+author: 6arms1leg
 legacy_permalink: http://fomori.org/blog/?p=970
 ---
 
@@ -10,7 +11,7 @@ legacy_permalink: http://fomori.org/blog/?p=970
 Maxima (software) and gnuplot – plot functions using lines with symbols on it (workaround)
 ==========================================================================================
 
-[![maxima-title-workaround](/assets/2014-08-02-Maxima__software__and_gnuplot___plot_functions_using_lines_with_symbols_on_it__workaround_/maxima-title-workaround.png)](/assets/2014-08-02-Maxima__software__and_gnuplot___plot_functions_using_lines_with_symbols_on_it__workaround_/maxima-title-workaround.png)
+[![maxima-title-workaround](/assets/images/maxima-title-workaround.png)](/assets/images/maxima-title-workaround.png)
 
 I am recently working on some scientific papers for which I have to visualize a lot of mathematical functions. In a good scientific paper the graphs (and visualizations in general) should be colorless and utilize dotted/dashed lines or lines with symbols on it instead of colors. This has several advantages: A colorless plot is more neutral to the reader, he/she does not get distracted by the different colors. A reader may also have a (subliminal) preference in color, so he/she pays more attention to e.g. the red curve than the yellow one, that is hardly readable on the white background anyway. This also helps to distinguish functions, if they are plotted in one diagram and printed in gray scale mode or read by color blind people. Also, if two identical functions are plotted in one diagram, using just colors will probably only show one of the functions and hide the other.
 
@@ -24,7 +25,7 @@ As mentioned before, gnuplot does the job just fine, e.g.:
 gnuplot> plot sin(x) with linespoints lc rgb "black"
 ```
 
-[![gnuplot-sin(x)](/assets/2014-08-02-Maxima__software__and_gnuplot___plot_functions_using_lines_with_symbols_on_it__workaround_/gnuplot-sinx.png)](/assets/2014-08-02-Maxima__software__and_gnuplot___plot_functions_using_lines_with_symbols_on_it__workaround_/gnuplot-sinx.png)
+[![gnuplot-sin(x)](/assets/images/gnuplot-sinx.png)](/assets/images/gnuplot-sinx.png)
 
 If the equivalent is done in Maxima:
 
@@ -34,7 +35,7 @@ If the equivalent is done in Maxima:
 
 , you get the following result:
 
-[![maxima-sin(x)-linespoints](/assets/2014-08-02-Maxima__software__and_gnuplot___plot_functions_using_lines_with_symbols_on_it__workaround_/maxima-sinx-linespoints.png)](/assets/2014-08-02-Maxima__software__and_gnuplot___plot_functions_using_lines_with_symbols_on_it__workaround_/maxima-sinx-linespoints.png)
+[![maxima-sin(x)-linespoints](/assets/images/maxima-sinx-linespoints.png)](/assets/images/maxima-sinx-linespoints.png)
 
 Maxima causes gnuplot to draw a symbol (in this case a “bullet”) on each sample point it provides. To draw a smooth curve, the sample rate is (by default) quite high, which in turn results in such a high density of points. That is the reason why the line appears to be thick. That of course defeats the purpose and decreases readability instead of increasing it.
 
@@ -44,7 +45,7 @@ You can use the “adapt\_depth” option in conjunction with “nticks”, but 
 (%i1) plot2d([sin(x)], [x, -10, 10], [style, linespoints], [color, black], [legend, "sin(x)"], [adapt_depth, 1], [nticks, 4])$
 ```
 
-[![maxima-sin(x)-linespoints-adapt_depth-nticks](/assets/2014-08-02-Maxima__software__and_gnuplot___plot_functions_using_lines_with_symbols_on_it__workaround_/maxima-sinx-linespoints-adapt_depth-nticks.png)](/assets/2014-08-02-Maxima__software__and_gnuplot___plot_functions_using_lines_with_symbols_on_it__workaround_/maxima-sinx-linespoints-adapt_depth-nticks.png)
+[![maxima-sin(x)-linespoints-adapt_depth-nticks](/assets/images/maxima-sinx-linespoints-adapt_depth-nticks.png)](/assets/images/maxima-sinx-linespoints-adapt_depth-nticks.png)
 
 The workaround I came up with “fakes” a line with symbols on it by simply overlaying three plots, making them look like one single smooth curve with symbols on it. The steps are:
 
@@ -67,7 +68,7 @@ plot2d(
 )$
 ```
 
-[![maxima-sin(x)-linespoints-workaround](/assets/2014-08-02-Maxima__software__and_gnuplot___plot_functions_using_lines_with_symbols_on_it__workaround_/maxima-sinx-linespoints-workaround.png)](/assets/2014-08-02-Maxima__software__and_gnuplot___plot_functions_using_lines_with_symbols_on_it__workaround_/maxima-sinx-linespoints-workaround.png)
+[![maxima-sin(x)-linespoints-workaround](/assets/images/maxima-sinx-linespoints-workaround.png)](/assets/images/maxima-sinx-linespoints-workaround.png)
 
 This should be easier, though. I really like Maxima (and gnuplot), but this is certainly a very basic and vital feature that is missing. Anyway, the workaround gets the job done for now.
 

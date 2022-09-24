@@ -3,6 +3,7 @@ layout: post
 title:  "Coders’ forbidden vocabula"
 date:   2014-03-24 15:34:26 +0000
 categories: ['Programming']
+author: devsnd
 legacy_permalink: http://fomori.org/blog/?p=846
 ---
 
@@ -12,7 +13,7 @@ Coders’ forbidden vocabulary
 
 I often have to read a lot of code from other people that is not exactly well written or easily understandable. I am working on several different projects; some open-source for fun & giggles and some closed-source for money & fame. I just noticed that the biggest problem in understanding other peoples code is not about things you could easily measure, like code quality in the sense of code formatting standards or the language that it is written in. Naming of constants and variables make all the difference for understanding the code others have written.
 
-[![forbiddenvocabulary](/assets/2014-03-24-Coders__forbidden_vocabula/forbiddenvocabulary.png)](http://fomori.org/blog/?attachment_id=873)I realized, that there are some words which should just be forbidden to use on their own. They are too broad or just don’t add any valuable information. I am also very sorry that these following examples contain PHP code, but this is where examples for doing things wrong are easily found. Most of the example code listings are not good practice in other senses as well, but that’s not what this post is about; It’s about the kind of readability which applies to all programming languages.
+[![forbiddenvocabulary](/assets/images/forbiddenvocabulary.png)](http://fomori.org/blog/?attachment_id=873)I realized, that there are some words which should just be forbidden to use on their own. They are too broad or just don’t add any valuable information. I am also very sorry that these following examples contain PHP code, but this is where examples for doing things wrong are easily found. Most of the example code listings are not good practice in other senses as well, but that’s not what this post is about; It’s about the kind of readability which applies to all programming languages.
 
 Shorter is not better
 ---------------------
@@ -105,9 +106,9 @@ please_dont_get_me_wrong_and_overdo_it_ĐĦĸŁØ = "Hello World!"
 
 This doesn’t mean that you should be too verbose when naming variables and you still might want to stick to ASCII names for your variables and try to make your lines not any longer than 80 or 99 characters depending on your coding standards. Using proper names you can completely avoid comments which describe what the code is doing; Instead just write comments *why* the code is doing something.
 
-[![](/assets/2014-03-24-Coders__forbidden_vocabula/71Jym5cRKEL._SL1077_.jpg)](http://amzn.com/020530902X)The higher the abstraction level, the more it all boils down [elementary principles of text composition.](https://en.wikipedia.org/wiki/The_Elements_of_Style) *Elements of style* by Strunk & White (S&W) explains in depth what words to use or avoid and how to compose a well written sentence within a properly structured paragraph. I think those rules apply to code in the same way. S&W argue, that a well written paragraph should make sense, even though you only read the first (topic sentence) and last sentence (conclusion) within it. This holds true for a function signature; The function name and the function parameter names form a topic sentence and the names of the return values (or variables) form the conclusion, which should describe what the function does entirely.
+[![](/assets/images/71Jym5cRKEL._SL1077_.jpg)](http://amzn.com/020530902X)The higher the abstraction level, the more it all boils down [elementary principles of text composition.](https://en.wikipedia.org/wiki/The_Elements_of_Style) *Elements of style* by Strunk & White (S&W) explains in depth what words to use or avoid and how to compose a well written sentence within a properly structured paragraph. I think those rules apply to code in the same way. S&W argue, that a well written paragraph should make sense, even though you only read the first (topic sentence) and last sentence (conclusion) within it. This holds true for a function signature; The function name and the function parameter names form a topic sentence and the names of the return values (or variables) form the conclusion, which should describe what the function does entirely.
 
-[![](/assets/2014-03-24-Coders__forbidden_vocabula/51CjDVfvZwL.jpg)](http://www.sensible.com/dmmt.html)All this also leads basic usability principles. The user/coder should spend as little amount as necessary to understand your code. You should not expect a programmer to read the whole source code to understand a smaller part of it, just a user shouldn’t read all the text on a webpage to navigate to their goal. Or as Steve Krug puts it, [don’t make me think](http://www.sensible.com/dmmt.html).
+[![](/assets/images/51CjDVfvZwL.jpg)](http://www.sensible.com/dmmt.html)All this also leads basic usability principles. The user/coder should spend as little amount as necessary to understand your code. You should not expect a programmer to read the whole source code to understand a smaller part of it, just a user shouldn’t read all the text on a webpage to navigate to their goal. Or as Steve Krug puts it, [don’t make me think](http://www.sensible.com/dmmt.html).
 
 If you haven’t read either of those books, I recommend them wholeheartedly.
 
