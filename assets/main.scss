@@ -7,7 +7,7 @@
 /* original fomori.org styles */
 
 /* center whole page */
-header, main, footer {
+body>header, body>main, body>footer {
   margin: 0 auto;
   max-width: 1000px;
   width: 100%;
@@ -39,8 +39,7 @@ header, main, footer {
 	top: 82px;
 }
 
-/* font styles */
-.post-link, .post-link:visited {
+@mixin fomori-title {
 	color: #fff;
 	font-size: 36px;
 	line-height: 46px;
@@ -48,9 +47,18 @@ header, main, footer {
 	text-shadow: 1px 1px 1px #000;
 	clear: both;
 	font-weight: bold;
-	line-height: 1.5em;
-	padding: 0 10px;
+	line-height: 1.1em;
+	padding: 15px 10px;
 	background-color: #ddd;
+}
+
+/* font styles */
+.post-title, .post-title:visited {
+	@include fomori-title;
+}
+.post-link, .post-link:visited,
+ {
+ 	@include fomori-title;
 
 	&:hover {
 		color: #1982d1;
@@ -58,3 +66,10 @@ header, main, footer {
 	}
 }
 
+/* images */
+img {
+	width: 300px;
+	margin: 0 auto;
+	padding: 15px;
+	display: block;
+}
