@@ -8,7 +8,7 @@ legacy_permalink: http://fomori.org/blog/?p=480
 ---
 
 
-[![goban_asm-w](/assets/images/goban_asm-w-300x162.png "goban_asm-w")](http://fomori.org/blog/wp-content/uploads/2013/05/goban_asm-w.png)[![goban_asm-draft](/assets/images/goban_asm-draft-300x178.png "goban_asm-draft")](http://fomori.org/blog/wp-content/uploads/2013/05/goban_asm-draft.png)[![goban-finished1](/assets/images/goban-finished1-300x215.jpg "goban-finished1")](http://fomori.org/blog/wp-content/uploads/2013/05/goban-finished1.jpg)
+[![goban_asm-w](/assets/images/goban_asm-w-300x162.png "goban_asm-w")](/assets/images/goban_asm-w.png)[![goban_asm-draft](/assets/images/goban_asm-draft-300x178.png "goban_asm-draft")](/assets/images/goban_asm-draft.png)[![goban-finished1](/assets/images/goban-finished1-300x215.jpg "goban-finished1")](http://fomori.org/blog/wp-content/uploads/2013/05/goban-finished1.jpg)
 
 I am a big fan of the old Japanese board game Go. Some time ago I wanted to get my own Go game, consisting of a Go board ([goban](https://en.wikipedia.org/wiki/Go_equipment#Board "en.wikipedia.org - goban")) and black and white stones. Unfortunately, I found out that wooden Go boards are quite expensive, by far exceeding the price range I was willing to pay. Actually, gobans are quite a simple piece of equipment. It is nothing more than a (wooden) board with a grid of 19 x 19 lines on it, why should I pay over 100 euro for it? So I decided to build my own and just buy the stones, which are cheap to come by.
 
@@ -24,7 +24,7 @@ The Japanese goban is not exactly a square, but has a distinct length-to-width r
 
 **Building the goban**
 
-[![goban_asm-explosion-w](/assets/images/goban_asm-explosion-w-300x208.png "goban_asm-explosion-w")](http://fomori.org/blog/wp-content/uploads/2013/05/goban_asm-explosion-w.png)
+[![goban_asm-explosion-w](/assets/images/goban_asm-explosion-w-300x208.png "goban_asm-explosion-w")](/assets/images/goban_asm-explosion-w.png)
 
 My goban consists of three wooden plates to form an empty cavity in the middle section (see picture above or the CAD drafts at the end of this article). That way it creates a beautiful sound when a stone is placed on the board.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Create a GNU/Linux multiboot USB-Stick (Live USB) with Syslinux chainloadi"
+title:  "Create a GNU/Linux multiboot USB-Stick (Live USB) with Syslinux chainloading"
 date:   2014-01-25 17:06:36 +0000
 categories: ['Hack', 'Hardware', 'Linux', 'Mod', 'Software']
 author: 6arms1leg

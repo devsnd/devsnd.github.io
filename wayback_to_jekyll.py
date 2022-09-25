@@ -33,7 +33,7 @@ for file in sorted(os.listdir(basedir)):
 	with open(index_file, 'r') as fh:
 		index_data = fh.read()
 
-	title = unescape(re.findall('<title>([^<]+)</title>', index_data)[0][:-len('| fomori blog')]).strip()
+	title = unescape(re.findall('<title>([^<]+)</title>', index_data)[0].replace('| fomori blog', '').replace(' | SLEIPNIR', '')).strip()
 	
 	content = re.findall('<article.+?>.+?</header>(.+?)<\\/article', index_data, re.DOTALL)[0]
 	def repl_func(match):
@@ -86,12 +86,15 @@ for file in sorted(os.listdir(basedir)):
 		dst = os.path.join(post_asset_path, image_file_name)
 		dst_url = os.path.join('/assets/' + post_asset_folder, image_file_name)
 		try:
-			shutil.copy(src, dst)
+			if not os.path.exists(dst):
+				shutil.copy(src, dst)
 		except:
 			print(f'Missing Image! {src}')
 		# print(dst)
 		content = content.replace(src_url, dst_url)
 		# print(dst_url)
+	# rewrite links to images
+	content = re.sub('http://fomori.org/blog/wp-content/uploads/\\d+/\\d+/(.+?.png)', r'/assets/images/\1', content)
 
 	post = f'''---
 layout: post

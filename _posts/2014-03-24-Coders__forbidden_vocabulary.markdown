@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coders’ forbidden vocabula"
+title:  "Coders’ forbidden vocabulary"
 date:   2014-03-24 15:34:26 +0000
 categories: ['Programming']
 author: devsnd

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How touch screens turn people into zombies or why keyboards are irreplacab"
+title:  "How touch screens turn people into zombies or why keyboards are irreplacable"
 date:   2014-02-18 17:57:29 +0000
 categories: ['Useless']
 author: devsnd

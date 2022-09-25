@@ -22,13 +22,13 @@ After the break you can find some screenshots of it in action.
 
 As you see, it is very minimalistic. You can click on the screen shots to view them in full resolution.
 
-[![](/assets/images/time1345133898-300x232.png "time1345133898")](http://fomori.org/blog/wp-content/uploads/2012/08/time1345133898.png)This is the search/main window. There are just 3 Tabs for all functionality. The Player always stays on top.
+[![](/assets/images/time1345133898-300x232.png "time1345133898")](/assets/images/time1345133898.png)This is the search/main window. There are just 3 Tabs for all functionality. The Player always stays on top.
 
-[![](/assets/images/time1345133928-300x232.png "time1345133928")](http://fomori.org/blog/wp-content/uploads/2012/08/time1345133928.png)Once you’ve entered you search terms, you will get a list of folders and files. Each folder is expandable right in place.
+[![](/assets/images/time1345133928-300x232.png "time1345133928")](/assets/images/time1345133928.png)Once you’ve entered you search terms, you will get a list of folders and files. Each folder is expandable right in place.
 
-[![](/assets/images/time1345133951-300x230.png "time1345133951")](http://fomori.org/blog/wp-content/uploads/2012/08/time1345133951.png)This is the Playlist view. Nothing special.
+[![](/assets/images/time1345133951-300x230.png "time1345133951")](/assets/images/time1345133951.png)This is the Playlist view. Nothing special.
 
-[![](/assets/images/time1345133998-300x240.png "time1345133998")](http://fomori.org/blog/wp-content/uploads/2012/08/time1345133998.png)There is also a view for browsing your files. If there are too many files you will only see the first letter, which in turn you can expand to see all files starting with that letter.
+[![](/assets/images/time1345133998-300x240.png "time1345133998")](/assets/images/time1345133998.png)There is also a view for browsing your files. If there are too many files you will only see the first letter, which in turn you can expand to see all files starting with that letter.
 
   
 

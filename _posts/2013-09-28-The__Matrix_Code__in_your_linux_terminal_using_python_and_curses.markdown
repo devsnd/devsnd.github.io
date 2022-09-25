@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The “Matrix Code” in your linux terminal using python and curs"
+title:  "The “Matrix Code” in your linux terminal using python and curses"
 date:   2013-09-28 17:50:31 +0000
 categories: ['Linux', 'Programming', 'Python', 'Software', 'Useless']
 author: devsnd
