@@ -73,7 +73,7 @@ so in this scenario, for 3000 vbv-maxrate, I chose a vbv-bufsize of 100 at 30 FP
 **On the client:**
 
 ```
-nc  9000 | mplayer -benchmark -
+nc <host_ip_address> 9000 | mplayer -benchmark -
 ```
 
 Note: always use the `-benchmark` flag on the client-side. `-framedrop` might help as well, especially on slower clients.

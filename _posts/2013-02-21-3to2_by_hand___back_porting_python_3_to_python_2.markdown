@@ -110,7 +110,7 @@ print
 You can import the python 3 printing function into python 2 as well. This works for python 2.6+
 
 ```
-from \_\_future\_\_ import print\_function
+<tt>from __future__ import print_function</tt>
 ```
 
 This will give you all the same function arguments as in python 3, e.g. the *end* argument, which can be very handy. Since python 2 also natively supports the *print(‘foo’)* syntax (with the strings in parenthesis), there should be nothing else to change for backwards compability.

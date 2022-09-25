@@ -14,7 +14,9 @@ So here it is:
 
 ```
 def evolution(life,s=size,next=0):
-    for j,i,nb in map(lambda j:(j,j+s+1,bin(life&((7|5<>((life>>i)&1))&1))<
+    for j,i,nb in map(lambda j:(j,j+s+1,bin(life&((7|5<<s|7<<s*2)<<j))[2:].count('1')),map(lambda x:x+int(x/(s-2))*2,range(0,(1<<s-2)+1))):
+        next = next|(1<<i)^(1^(((('23'.count(str(nb))<<1)+'3'.count(str(nb)))>>((life>>i)&1))&1))<<i
+    return next
 ```
 
 There’s a little write-up and the source after the break.
@@ -41,7 +43,7 @@ On the code:
 I used a few tricks to reduce the number of lines, without calculating things multiple times. For example, I am using a bit mask to find out which neighbors are alive:
 
 ```
-life&((7|5<
+life&((7|5<<s|7<<s*2)<<j)
 ```
 
 7 in binary is 111, 5 is 101 and 7 is again 111. I then shifted the bits so that the mask would align to the size of the field. Then I perform a bitwise logical-and with the mask shifted by *j* which is my array index. This gives me a number that has as many ones in binary representation as *j* has neighbors. So to count the neighbors I convert the number using to a binary representation and count how many times the character ’1′ is inside that string:  

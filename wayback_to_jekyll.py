@@ -1,7 +1,7 @@
 import sys
 import os
 import re
-from html import unescape
+from html import unescape, escape
 import markdownify
 import shutil
 from bs4 import BeautifulSoup
@@ -44,8 +44,10 @@ for file in sorted(os.listdir(basedir)):
 			td.get_text()
 			for i, td in enumerate(all_crayon_lines)
 		]
+		if len(lines) > 1:
+			print(lines)
 		joined_lines = "\n".join(lines)
-		retval = f'<pre><code>{joined_lines}<code></pre>'
+		retval = f'<pre><code>{escape(joined_lines)}<code></pre>'
 		# print(retval)
 		return retval
 	content = re.sub('<table class="crayon-table">(.+?)</table>', repl_func, content, flags=re.DOTALL)
