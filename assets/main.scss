@@ -16,8 +16,9 @@ body>header, body>main, body>footer {
 
 /* header with image */
 .site-header {
-	background-image: url("/assets/sleitnir_blog_header1.png");
+	background: url("/assets/sleitnir_blog_header1.png"), linear-gradient(180deg, rgba(245,240,223,1) 91%, rgba(90,61,27,1) 91%, rgba(90,61,27,1) 100%);;
 	height: 264px;
+	width: 100%;
 	border: 0;
 }
 .site-title, .site-title:visited, .site-subtitle, .site-subtitle:visited {
