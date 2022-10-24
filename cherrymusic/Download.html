@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Stream your own music collection to all your devices! The easy to use free and open-source music streaming server." />
+    <title>CherryMusic | Download | open-source HTML5 music streaming server</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+    <link rel="icon" href="favicon32.png" type="image/png">
+    <script src="lightbox/js/jquery-1.7.2.min.js"></script>
+    <script src="lightbox/js/lightbox.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+    .screen{
+        float: left;
+    }
+    code{
+        color: #0F6FA2 !important;
+    }
+    /*force scrollbar*/
+    html {
+        overflow: -moz-scrollbars-vertical;
+        overflow: scroll;
+        overflow-y: scroll;
+    }
+    .text-center{
+        text-align: center;
+    }
+    code{
+        white-space: normal;
+    }
+    .nohover:hover{
+        text-decoration: none;
+    }
+    .header-logo{
+        height: 90px;
+    }
+    .header-logo h2{
+        margin: 0;
+    }
+    @media (max-width: 700px) {
+        h1, h2, h3 {
+            
+        }
+        .nav-tabs > li{
+            display: block;
+            float: none;
+        }
+    }
+    </style>
+    <!-- Piwik -->
+    <script type="text/javascript"> 
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://fomori.org/cherrymusic/piwik//";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+        g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+
+    </script>
+    <noscript><p><img src="http://fomori.org/cherrymusic/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+</head>
+<body>
+<div class="container">
+<div class="header-logo">
+            <a href="index.html" class="nohover">
+                <h2>
+                    <img style="margin-bottom: 3px" src="cherrymusic_small.png">
+                    <span style="vertical-align: bottom">CherryMusic</span>
+                </h2>
+            </a>
+            </div>
+<ul class="nav nav-tabs" id="myTab">
+	<li class=""><a href="index.html">Home</a></li>
+	<li class="active"><a href="Download.html">Download</a></li>
+	<li class=""><a href="Setup Guide.html">Setup Guide</a></li>
+	<li class=""><a href="Contribute.html">Contribute</a></li>
+	<li class=""><a href="Development.html">Development</a></li>
+	<li class=""><a href="Screenshots.html">Screenshots</a></li>
+	<li class=""><a href="Changes.html">Changes</a></li>
+	<li class=""><a href="FAQ.html">FAQ</a></li>
+	<li class=""><a href="About.html">About</a></li>
+</ul>
+
+<h2>Download</h2>
+<p>No-Headaches-grab-it-while-it's-hot-release:</p>
+<!--DOWNLOAD-PAGE-->
+<a class="btn btn-primary btn-large"
+    href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.41.3.tar.gz">
+    Download CherryMusic 0.41.3 (.tar.gz)
+</a>
+
+<!--QUICK INSTALL GUIDES-->
+
+<div id="quick-install-arch" class="modal hide fade">
+     <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Arch quick install</h3>
+    </div>
+    <div class="modal-body">
+        <div class="alert alert-info">This quick guide assumes that you use <a href="https://wiki.archlinux.org/index.php/Yaourt">yaourt</a>
+        for AUR package installation.</div>
+        <p>Just download cherrymusic straight from the AUR:</p>
+        
+        <h4>Minimal Installation (no optional dependencies)</h4>
+        <pre><code>yaourt -S cherrymusic</code></pre>
+        <h4>Full Installation (all optional dependencies)</h4>
+        <pre><code>yaourt -S cherrymusic lame vorbis-tools flac faad2 mpg123 ffmpeg python3-stagger-svn imagemagick</code></pre>
+        
+        <h4>More details</h4>
+        <p>The installation guide in this site has some more specifics.
+        For a nice system integration and configuration proposals there is a <a href="https://wiki.archlinux.org/index.php/CherryMusic">very detailed setup guide in the arch linux wiki</a> that contains much more useful information</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">That's damn helpful!</button>
+    </div>
+</div>
+
+<h3>Distribution packages:</h3>
+<ul>
+    <li><img src="archlogo.png"> <a href="https://aur.archlinux.org/packages.php?ID=62928">Arch package in the AUR</a>
+    <a href="#quick-install-arch" role="button" class="btn btn-primary btn-small" data-toggle="modal">show quick install quide for arch</a>
+    </li>
+    <li><img src="gentoologo.png"> <a href="http://gpo.zugaina.org/media-sound/cherrymusic">Gentoo ebuild</a></li>
+</ul>
+
+<h3>old versions:</h3>
+<ul>
+    <li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.41.2.tar.gz">version 0.41.2</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.41.1.tar.gz">version 0.41.1</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.41.0.tar.gz">version 0.41.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.40.0.tar.gz">version 0.40.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.39.1.tar.gz">version 0.39.1</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.38.0.tar.gz">version 0.38.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.37.2.tar.gz">version 0.37.2</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.37.1.tar.gz">version 0.37.1</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.37.0.tar.gz">version 0.37.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.36.0.tar.gz">version 0.36.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.35.2.tar.gz">version 0.35.2</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.35.1.tar.gz">version 0.35.1</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.35.0.tar.gz">version 0.35.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.34.1.tar.gz">version 0.34.1</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.34.0.tar.gz">version 0.34.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.33.0.tar.gz">version 0.33.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.32.0.tar.gz">version 0.32.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.31.2.tar.gz">version 0.31.2</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.31.1.tar.gz">version 0.31.1</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.31.0.tar.gz">version 0.31.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.30.0.tar.gz">version 0.30.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.29.0.tar.gz">version 0.29.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.28.0.tar.gz">version 0.28.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.27.2.tar.gz">version 0.27.2</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.27.1.tar.gz">version 0.27.1</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.27.0.tar.gz">version 0.27.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.26.0.tar.gz">version 0.26.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.25.2.tar.gz">version 0.25.2</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.25.1.tar.gz">version 0.25.1</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.25.0.tar.gz">version 0.25.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.24.1.tar.gz">version 0.24.1</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.24.0.tar.gz">version 0.24.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.23.0.tar.gz">version 0.23.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.22.0.tar.gz">version 0.22.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.21.1.tar.gz">version 0.21.1</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.21.0.tar.gz">version 0.21.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.20.0.tar.gz">version 0.20.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.11.0.tar.gz">version 0.11.0</a></li>
+<li><a href="http://www.fomori.org/cherrymusic/versions/cherrymusic-0.10.tar.gz">version 0.10</a></li>
+</ul>
+<hr>
+CherryMusic © 2012 - 2015
+</div>
+</body>
+</html>

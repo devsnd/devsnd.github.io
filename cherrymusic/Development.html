@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Stream your own music collection to all your devices! The easy to use free and open-source music streaming server." />
+    <title>CherryMusic | Development | open-source HTML5 music streaming server</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+    <link rel="icon" href="favicon32.png" type="image/png">
+    <script src="lightbox/js/jquery-1.7.2.min.js"></script>
+    <script src="lightbox/js/lightbox.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+    .screen{
+        float: left;
+    }
+    code{
+        color: #0F6FA2 !important;
+    }
+    /*force scrollbar*/
+    html {
+        overflow: -moz-scrollbars-vertical;
+        overflow: scroll;
+        overflow-y: scroll;
+    }
+    .text-center{
+        text-align: center;
+    }
+    code{
+        white-space: normal;
+    }
+    .nohover:hover{
+        text-decoration: none;
+    }
+    .header-logo{
+        height: 90px;
+    }
+    .header-logo h2{
+        margin: 0;
+    }
+    @media (max-width: 700px) {
+        h1, h2, h3 {
+            
+        }
+        .nav-tabs > li{
+            display: block;
+            float: none;
+        }
+    }
+    </style>
+    <!-- Piwik -->
+    <script type="text/javascript"> 
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://fomori.org/cherrymusic/piwik//";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+        g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+
+    </script>
+    <noscript><p><img src="http://fomori.org/cherrymusic/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+</head>
+<body>
+<div class="container">
+<div class="header-logo">
+            <a href="index.html" class="nohover">
+                <h2>
+                    <img style="margin-bottom: 3px" src="cherrymusic_small.png">
+                    <span style="vertical-align: bottom">CherryMusic</span>
+                </h2>
+            </a>
+            </div>
+<ul class="nav nav-tabs" id="myTab">
+	<li class=""><a href="index.html">Home</a></li>
+	<li class=""><a href="Download.html">Download</a></li>
+	<li class=""><a href="Setup Guide.html">Setup Guide</a></li>
+	<li class=""><a href="Contribute.html">Contribute</a></li>
+	<li class="active"><a href="Development.html">Development</a></li>
+	<li class=""><a href="Screenshots.html">Screenshots</a></li>
+	<li class=""><a href="Changes.html">Changes</a></li>
+	<li class=""><a href="FAQ.html">FAQ</a></li>
+	<li class=""><a href="About.html">About</a></li>
+</ul>
+
+<div class="alert alert-info">This is a mirror of our wiki
+        pages on github. <a href="https://github.com/devsnd/cherrymusic/wiki/Development">
+        Please feel free to edit and contribute to the wiki to improve this page.</a>
+        Thank you.
+        </div><p>Information, resources and conventions concerning cherrymusic development</p>
+<p><a href="https://travis-ci.org/devsnd/cherrymusic"><img alt="Build Status" src="https://travis-ci.org/devsnd/cherrymusic.png?branch=master" /></a> master <br />
+<a href="https://travis-ci.org/devsnd/cherrymusic"><img alt="Build Status" src="https://travis-ci.org/devsnd/cherrymusic.png?branch=devel" /></a> devel</p>
+<a name="contents"></a><h1>Contents</h1>
+<ul>
+<li><a href="Development.html#front-end-development">Front-End Development</a></li>
+<li><a href="Development.html#back-end-development">Back-End Development</a></li>
+<li><a href="Development.html#continuous-integration">Continuous Integration</a></li>
+<li><a href="Development.html#release-checklist">Release Checklist</a></li>
+<li><a href="Development.html#useful-links">Useful Links</a></li>
+</ul>
+<a name="front-end-developement"></a><h1>Front-End Developement</h1>
+<p>CherryMusic switched to using <a href="http://getbootstrap.com/">Bootstrap 3</a> which in turn uses <a href="http://lesscss.org/">less-css</a>. less-css is basically css with macros and is normally compiled offline and then deployed with the web-application. We went with a hybrid approach; For the end-user we compile and minify everything. This is the default front-end. For developing, we have a raw and self-compiling version, so we can keep up the developement speed. We've chosen the same approach for the javascript.</p>
+<p>The deployment script (<a href="https://github.com/devsnd/cherrymusic/blob/devel/deploy.py">deploy.py</a>) compresses the javascript and compiles the less-css, so cherrymusic will load more quickly for the end-users. This deployment script uses the <a href="https://github.com/devsnd/cherrymusic/blob/devel/res/devel.html"><code>res/devel.html</code></a> as input and creates <a href="https://github.com/devsnd/cherrymusic/blob/devel/res/devel.html"><code>res/main.html</code></a> as output. If you open cherrymusic in the browser, you get the compiled version as default. (you'll notice that all js files are replaced by only one file called <code>cherrymusic.dist.js</code>)
+You should never make changes to the <code>res/main.html</code> since it is auto-generated, so any changes to the main.html will be overwritten by the deployment script. Furthermore, there are some <a href="https://github.com/janl/mustache.js">mustache</a> HTML templates that might be of interest which are used mostly in <code>res/mediabrowser.js</code> to render search results.</p>
+<p>If you want to make any changes to the frontend you should append a GET parameter <code>devel=True</code> to your URL, e.g. <code>localhost:8080/?devel=True</code>. This will give you the undeployed version of CM, which contains all the JS files and less-css imports and the less-css compiler. Since the less compiler is distributed with CM, this allows for quick changes. We have a not-so-strict naming scheme for all the less-css. If you're curious, the modded parts of bootstrap are: <code>res/bootstrap3/less/cherrymusic.less</code>, <code>res/bootstrap3/less/jplayer.less</code> and <code>res/bootstrap3/less/mediabrowser.less</code></p>
+<p>The deployment script <code>deploy.py</code> requires:</p>
+<ul>
+<li>node.js and the less compiler lessc</li>
+<li>jsmin</li>
+<li>python3</li>
+</ul>
+<p><code>jsmin</code> and <code>lessc</code> have to be in your <code>$PATH</code>.</p>
+<p>You can make changes, test them and submit them without having installed the deploy requirements using the <code>devel=True</code> GET parameter.</p>
+<p>For the location of files and resources, check out the <a href="https://github.com/devsnd/cherrymusic/wiki/Package-Structure">
+               [CREATE PAGE: Package Structure]
+               </a> page.</p>
+<a name="back-end-development"></a><h1>Back-End Development</h1>
+<p>The CherryMusic server code resides in the <code>cherrymusicserver</code> package. For an overview of CherryMusic's files and resources, see the <a href="https://github.com/devsnd/cherrymusic/wiki/Package-Structure">
+               [CREATE PAGE: Package Structure]
+               </a> page.</p>
+<a name="testing"></a><h2>Testing</h2>
+<a name="dependencies"></a><h3>Dependencies</h3>
+<p>To run tests, the following modules are required:</p>
+<ul>
+<li><a href="https://pypi.python.org/pypi/nose/">nose</a></li>
+<li><a href="https://pypi.python.org/pypi/mock">mock</a></li>
+<li><a href="https://pypi.python.org/pypi/unittest2">unittest2</a> (Python 2.6)</li>
+<li><a href="https://pypi.python.org/pypi/coverage">coverage</a> (optional)</li>
+</ul>
+<a name="running-tests"></a><h3>Running tests</h3>
+<ul>
+<li>
+<p>The <code>runtests</code> script is responsible for running the test-suite (on unix-y systems). If the <code>coverage</code> module is installed, a minimum <strong>coverage requirement</strong> is enforced to ensure test coverage does not decrease.</p>
+<pre><code> Usage: runtests [-d OUTPUT_DIR] [TARGET]
+
+ -d OUTPUT_DIR   if given, write HTML coverage report to this directory, 
+                 creating it if necessary.
+
+ TARGET          if given, only test the module "cherrymusicserver.TARGET" 
+                 by running "cherrymusicserver.test.test_TARGET". Full 
+                 coverage is required in this case.
+</code></pre>
+</li>
+<li>
+<p>As an alternative, <code>nosetests</code> can be run in the project directory. This is what our <a href="Development.html#continous-integration">travis setup</a> does.</p>
+</li>
+<li>
+<p>There is also the [<code>pre-commit</code>] script, which can be used as a <strong>commit hook</strong> to automatically run tests before a commit gets created. To use it, place an executable symlink of the same name into <code>.git/hooks</code>.</p>
+</li>
+</ul>
+<a name="continuous-integration"></a><h1>Continuous Integration</h1>
+<a name="automatic-tests"></a><h3>Automatic Tests</h3>
+<p><a href="https://travis-ci.org/devsnd/cherrymusic"><img alt="Build Status" src="https://travis-ci.org/devsnd/cherrymusic.png?branch=devel" /></a></p>
+<p><a href="http://about.travis-ci.org/docs/">travis-ci</a> tests certain branches after commits to github. <a href="https://github.com/devsnd/cherrymusic/blob/devel/.travis.yml"><code>.travis.yml</code></a> contains the relevant configuration. There are <a href="http://about.travis-ci.org/docs/user/browser-extensions/">browser plugins</a> to display project build status while browsing github. 
+Add <code>[ci skip]</code> to the commit message to <em>skip a CI build</em> for a commit.</p>
+<a name="coverage-reports"></a><h3>Coverage Reports</h3>
+<p><a href="https://coveralls.io/r/devsnd/cherrymusic?branch=devel"><img alt="Coverage Status" src="https://coveralls.io/repos/devsnd/cherrymusic/badge.png?branch=devel" /></a></p>
+<p>Our travis builds are tracked and analyzed for test coverage by <a href="https://coveralls.io/r/devsnd/cherrymusic">coveralls.io</a>. Again, <a href="https://github.com/devsnd/cherrymusic/blob/devel/.travis.yml"><code>.travis.yml</code></a> is relevant.</p>
+<a name="restful-interface-definition-(in-developement!)"></a><h1>RESTful Interface definition (in developement!)</h1>
+<p><a href="https://github.com/devsnd/cherrymusic/wiki/RESTful-Interface-definition-">
+               [CREATE PAGE: RESTful Interface definition ]
+               </a></p>
+<a name="release-checklist"></a><h1>Release Checklist</h1>
+<p>Here's the recommended way to create a new release from the current devel branch.</p>
+<ol>
+<li>
+<p><strong>Create release branch</strong></p>
+<pre><code>$ git checkout devel &amp;&amp; git checkout -b release
+</code></pre>
+</li>
+<li>
+<p><strong>Test</strong></p>
+<pre><code>$ ./runtests
+</code></pre>
+</li>
+<li>
+<p><strong>Bump the version</strong></p>
+<ul>
+<li><code>VERSION</code> in <code>cherrymusicserver/__init__.py</code></li>
+<li>add <code>CHANGES</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Create the release commit</strong></p>
+<pre><code>$ git commit --all -m "version X.Y.Z"
+</code></pre>
+</li>
+<li>
+<p><strong>Create annotated tag with release number</strong></p>
+<pre><code>$ git tag -a "X.Y.Z" [-m &lt;MESSAGE&gt;]
+</code></pre>
+</li>
+<li>
+<p><strong>Merge into <code>devel</code> and <code>master</code>, then push.</strong></p>
+<pre><code>$ git checkout devel &amp;&amp; git merge release \
+&amp;&amp; git checkout master &amp;&amp; git merge --ff-only release \
+&amp;&amp; git push --tags origin &amp;&amp; git branch -d release
+</code></pre>
+</li>
+</ol>
+<a name="useful-links"></a><h1>Useful links</h1>
+<a name="api"></a><h2>API</h2>
+<ul>
+<li><a href="https://speakerdeck.com/u/dzuelke/p/designing-http-interfaces-and-restful-web-services-sflivesanfrancisco2012-2012-09-27">designing RESTful web services</a></li>
+</ul>
+<a name="git"></a><h2>git</h2>
+<ul>
+<li><a href="http://nvie.com/posts/a-successful-git-branching-model/">branching model</a></li>
+<li><a href="http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html">workflow</a></li>
+<li><a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">commit messages</a></li>
+<li><a href="http://eagain.net/articles/git-for-computer-scientists/">how git works</a></li>
+</ul>
+<hr>
+CherryMusic © 2012 - 2015
+</div>
+</body>
+</html>
