@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linux Desktop File Creator</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0c29 0%, #302b63 40%, #24243e 70%, #1a1a2e 100%);
+      background-attachment: fixed;
+    }
+    h1 {
+      color: #e8d5f0;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .inputs-column {
+      flex: 1;
+      max-width: 400px;
+    }
+    .outputs-column {
+      flex: 1;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #c9b8d4;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    input[type="text"]:focus {
+      outline: none;
+      border-color: #ff9800;
+      box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.25);
+    }
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .checkbox-group input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+    }
+    .checkbox-group label {
+      display: inline;
+      margin-bottom: 0;
+    }
+    h2 {
+      color: #d4c4e0;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .output-section {
+      margin-bottom: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 180px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 12px;
+      background-color: #fff;
+      resize: vertical;
+    }
+    .terminal-textarea {
+      height: 60px;
+    }
+    .copy-btn {
+      margin-top: 8px;
+      padding: 8px 16px;
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .copy-btn:hover {
+      background-color: #e68900;
+    }
+    .copy-btn:active {
+      transform: translateY(1px);
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>Linux Desktop File Creator</h1>
+    
+    <div class="container">
+      <div class="inputs-column">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" v-model="name" placeholder="Application Name">
+        </div>
+        
+        <div class="form-group">
+          <label for="exec">Exec</label>
+          <input type="text" id="exec" v-model="exec" placeholder="/path/to/executable">
+        </div>
+        
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <input type="text" id="comment" v-model="comment" placeholder="Description of the application">
+        </div>
+        
+        <div class="form-group">
+          <label for="workingDir">Working Directory</label>
+          <input type="text" id="workingDir" v-model="workingDir" placeholder="/working/directory">
+        </div>
+        
+        <div class="form-group">
+          <label for="icon">Icon</label>
+          <input type="text" id="icon" v-model="icon" placeholder="/path/to/icon.png">
+        </div>
+        
+        <div class="form-group">
+          <div class="checkbox-group">
+            <input type="checkbox" id="terminal" v-model="terminal">
+            <label for="terminal">Run in Terminal</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="outputs-column">
+        <div class="output-section">
+          <h2>Desktop File</h2>
+          <textarea readonly>{{ desktopFileContent }}</textarea>
+          <button class="copy-btn" @click="copyToClipboard(desktopFileContent)">Copy to Clipboard</button>
+        </div>
+        
+        <div class="output-section">
+          <h2>Terminal Command</h2>
+          <textarea class="terminal-textarea" readonly>{{ terminalCommand }}</textarea>
+          <button class="copy-btn" @click="copyToClipboard(terminalCommand)">Copy to Clipboard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    const { createApp } = Vue;
+    
+    createApp({
+      data() {
+        return {
+          name: '',
+          exec: '',
+          comment: '',
+          workingDir: '',
+          icon: '',
+          terminal: false
+        };
+      },
+      computed: {
+        desktopFileContent() {
+          let content = '[Desktop Entry]\n';
+          content += 'Type=Application\n';
+          content += 'Version=1.0\n';
+          
+          if (this.name) {
+            content += `Name=${this.name}\n`;
+          }
+          
+          if (this.comment) {
+            content += `Comment=${this.comment}\n`;
+          }
+          
+          if (this.workingDir) {
+            content += `Path=${this.workingDir}\n`;
+          }
+          
+          content += `Exec=${this.exec}\n`;
+          
+          if (this.icon) {
+            content += `Icon=${this.icon}\n`;
+          }
+          
+          content += `Terminal=${this.terminal}\n`;
+          
+          return content;
+        },
+        fileName() {
+          if (!this.name) return 'application.desktop';
+          // Convert name to valid filename: lowercase, replace spaces with dashes, remove special chars
+          return this.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') + '.desktop';
+        },
+        terminalCommand() {
+          // Escape for shell: backslashes, double quotes, dollar signs, backticks
+          const escaped = this.desktopFileContent
+          .replace(/\\/g, '\\\\')
+          .replace(/"/g, '\\"')
+          .replace(/\$/g, '\\$')
+          .replace(/`/g, '\\`')
+          .replace(/\n/g, '\\n');
+          
+          return `echo -e "${escaped}" > ~/.local/share/applications/${this.fileName}`;
+        }
+      },
+      methods: {
+        copyToClipboard(content) {
+          navigator.clipboard.writeText(content).then(() => {
+            alert('Copied to clipboard!');
+          }).catch(err => {
+            console.error('Failed to copy:', err);
+          });
+        }
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>
