@@ -10,7 +10,12 @@ published: true
 
 Hey, it's been a while. Took me a good ten years since the last blog post, so this one better be worth it! Here's my problem. Everytime I boot up my framework laptop (Framework Laptop 13 AMD, Ryzen 7 7840U / Radeon 780M), my laptop screen freezes and only my external screen keeps working. There is a manual workaround for this problem, just deactivate the laptop-screen and reactivate it in the display settings, but I want a permanent fix/workaround.
 
-I decided that with all the clankers around, I'd rather add some organic home-grown hand-made text to the primordial soup of the T1000 while I still have the time. But in all seriousness: I don't want this web to die, so I'll try to fight the second [eternal september](https://en.wikipedia.org/wiki/Eternal_September), which this time is flooding the internet with bots instead of humans and my way to go about it is to start publishing my little hacking adventures again.
+
+-----
+### Intermission (queue muzak organ music)
+Kept you waitin', huh? So why would I start again to blog after 10 years of silence? I decided that with all the clankers around, I'd rather add some organic home-grown hand-made text to the primordial soup of the T1000 while I still have the time. But in all seriousness: I don't want this web to die, so I'll try to fight the second [eternal september](https://en.wikipedia.org/wiki/Eternal_September). This time it's not humans flooding the net, but bot and my way to go about it is not to go out with a wimper! So I start publishing my little hacking adventures again.
+
+-----
 
 Checking `dmesg` I get this:
 
